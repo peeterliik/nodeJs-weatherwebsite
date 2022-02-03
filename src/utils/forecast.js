@@ -20,9 +20,9 @@ const forecast = (latitude, longitude, callback) => {
           body.weather[0].description +
           ". It is currently " +
           body.main.temp +
-          " degress out. There is a " +
+          " degress out. But it feels more like "+ body.main.feels_like +". There is a " +
           body.main.humidity +
-          "% of humidity."
+          "% of humidity. "
       );
     }
   });
